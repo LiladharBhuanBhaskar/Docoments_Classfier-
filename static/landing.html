@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Choose Document · Document Parser</title>
+    <meta name="description" content="Choose Aadhaar, PAN, Voter ID or Driving License to upload and parse." />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body class="landing">
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <div class="brand">
+          <div class="brand__title">Document Scanner</div>
+          <div class="brand__subtitle"></div>
+        </div>
+        <div class="topbar__actions">
+        </div>
+      </div>
+    </header>
+
+    <main class="container landing__main">
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">Select a document to upload</h1>
+          <p class="hero__subtitle">
+            Choose Aadhaar, PAN, Voter ID, or Driving License to continue to the upload + chat screen. Your selection will be shown in the app.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--cta" href="/app?doc=aadhaar">Aadhaar</a>
+            <a class="btn btn--cta btn--cta-green" href="/app?doc=pan">PAN</a>
+            <a class="btn btn--cta" href="/app?doc=voter_id">Voter ID</a>
+            <a class="btn btn--cta" href="/app?doc=driving_license">Driving License</a>
+          </div>
+        </div>
+
+        <div class="hero__meta" aria-label="Highlights">
+          <span class="pill">Chat with document</span>
+        </div>
+      </section>
+
+      <section class="doc-grid" aria-label="Document choices">
+        <article class="doc-card doc-card--aadhaar">
+          <div class="doc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path
+                d="M7 3h10a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+              <path
+                d="M8 8.5h8M8 12h8M8 15.5h5"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+          <h2 class="doc-card__title">Aadhaar</h2>
+          <p class="doc-card__desc">Best for extracting name, DOB, gender, Aadhaar number, and address fields.</p>
+          <a class="btn btn--cta doc-card__cta" href="/app?doc=aadhaar">Upload Aadhaar</a>
+        </article>
+
+        <article class="doc-card doc-card--pan">
+          <div class="doc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path
+                d="M5 7.5A3.5 3.5 0 0 1 8.5 4h7A3.5 3.5 0 0 1 19 7.5v9A3.5 3.5 0 0 1 15.5 20h-7A3.5 3.5 0 0 1 5 16.5v-9Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+              <path d="M7.5 9.2h9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+              <path
+                d="M8 15.7c1.2-1.1 2.6-1.7 4-1.7s2.8.6 4 1.7"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 13.6a2.1 2.1 0 1 0 0-4.2 2.1 2.1 0 0 0 0 4.2Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+            </svg>
+          </div>
+          <h2 class="doc-card__title">PAN</h2>
+          <p class="doc-card__desc">Best for extracting PAN number, name, father name, DOB and issue details.</p>
+          <a class="btn btn--cta btn--cta-green doc-card__cta" href="/app?doc=pan">Upload PAN</a>
+        </article>
+
+        <article class="doc-card doc-card--voter">
+          <div class="doc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path
+                d="M7 4h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+              <path
+                d="M8.5 9.2h7M8.5 12h5.2"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+              <path
+                d="M9 15.7l1.5 1.6L15.6 12"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <h2 class="doc-card__title">Voter ID</h2>
+          <p class="doc-card__desc">Best for extracting EPIC number, name, DOB, and gender.</p>
+          <a class="btn btn--cta doc-card__cta" href="/app?doc=voter_id">Upload Voter ID</a>
+        </article>
+
+        <article class="doc-card doc-card--dl">
+          <div class="doc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none">
+              <path
+                d="M6 4.5h12A3.5 3.5 0 0 1 21.5 8v8A3.5 3.5 0 0 1 18 19.5H6A3.5 3.5 0 0 1 2.5 16V8A3.5 3.5 0 0 1 6 4.5Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+              <path
+                d="M7.7 9h8.6M7.7 12h6"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+              <path
+                d="M8.1 15.8h4.6"
+                stroke="currentColor"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+              <path
+                d="M16.6 14.3a2.2 2.2 0 1 1 0 .1Z"
+                stroke="currentColor"
+                stroke-width="1.6"
+              />
+            </svg>
+          </div>
+          <h2 class="doc-card__title">Driving License</h2>
+          <p class="doc-card__desc">Best for extracting DL number, name, DOB, issue date, and validity details.</p>
+          <a class="btn btn--cta doc-card__cta" href="/app?doc=driving_license">Upload Driving License</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>Tip: You can change the selection anytime.</span>
+      </div>
+    </footer>
+  </body>
+</html>

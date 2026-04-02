@@ -1,0 +1,6 @@
+0 Aadhar
+1 Pan
+2 Other
+3 Driving License 
+4 Voters 
+5 Resume
